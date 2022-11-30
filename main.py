@@ -185,11 +185,11 @@ if __name__ == "__main__":
 
         to_address = recepients[zero]
 
-        AMOUNT_TO_TRANSFER = round(random.uniform(1, 3), 5) # от 1 до 3, 5 цифр после точки
+        # AMOUNT_TO_TRANSFER = round(random.uniform(1, 3), 5) # от 1 до 3, 5 цифр после точки
         # AMOUNT_TO_TRANSFER = 0.1 # фиксированный amount
-        # AMOUNT_TO_TRANSFER = 'all_balance' # весь баланс
-        CHAIN = 'Optimism' # Ethereum | Optimism | BSC | Polygon | Fantom | Arbitrum One | Arbitrum Nova | AVAX
-        ADDRESS_CONTRACT = '0x4200000000000000000000000000000000000042' # пусто если eth
+        AMOUNT_TO_TRANSFER = 'all_balance' # весь баланс
+        CHAIN = 'Polygon' # Ethereum | Optimism | BSC | Polygon | Fantom | Arbitrum One | Arbitrum Nova | AVAX
+        ADDRESS_CONTRACT = '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174' # пусто если eth
 
         for x in RPC:
             if x['chain'] == CHAIN:
